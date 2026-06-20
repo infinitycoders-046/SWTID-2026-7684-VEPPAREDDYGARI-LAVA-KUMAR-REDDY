@@ -1,0 +1,110 @@
+```html
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container-fluid section">
+
+    <h1 class="text-center mb-4">
+        Plugging into the Future: An Exploration of Electricity Consumption Patterns Dashboard 02
+    </h1>
+
+    <div class="dashboard">
+
+        <h3 class="mb-3">
+            Monthly Usage Trends
+        </h3>
+
+        <!-- Tableau Dashboard -->
+        <div class="tableau-container">
+
+            <div
+                class="tableauPlaceholder"
+                id="viz1781510168077">
+
+                <object class="tableauViz">
+
+                    <param name="host_url"
+                    value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+
+                    <param name="embed_code_version"
+                    value="3"/>
+
+                    <param name="site_root"
+                    value=""/>
+
+                    <param name="name"
+                    value="pluggingintothefitureAnexplorationofelectricityconsumptionpatternsDasboard2/PluggingintotheFutureAnExplorationofElectricityConsumptionPatternsDashboard2"/>
+
+                    <param name="tabs"
+                    value="no"/>
+
+                    <param name="toolbar"
+                    value="yes"/>
+
+                    <param name="display_count"
+                    value="no"/>
+
+                </object>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<style>
+
+.tableau-container{
+    width:100%;
+    height:calc(100vh - 120px);
+    overflow:hidden;
+}
+
+.tableauPlaceholder,
+.tableauViz{
+    width:100% !important;
+    height:100% !important;
+}
+
+.dashboard{
+    width:100%;
+}
+
+@media (max-width:768px){
+
+.tableau-container{
+    height:80vh;
+}
+
+}
+
+</style>
+
+
+<script>
+
+var divElement =
+document.getElementById("viz1781510168077");
+
+var vizElement =
+divElement.getElementsByTagName("object")[0];
+
+vizElement.style.width = "100%";
+vizElement.style.height = "100%";
+
+var script =
+document.createElement("script");
+
+script.src =
+"https://public.tableau.com/javascripts/api/viz_v1.js";
+
+divElement.appendChild(script);
+
+</script>
+
+{% endblock %}
+```

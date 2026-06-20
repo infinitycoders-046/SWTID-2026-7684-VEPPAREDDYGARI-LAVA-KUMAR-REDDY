@@ -1,0 +1,111 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style type="text/css">
+    .card{
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    object-fit:cover;
+}
+</style>
+<div class="container section">
+
+<h1>
+About Project
+</h1>
+
+<p>
+
+This project explores electricity
+consumption trends and provides
+visual insights into energy usage.
+
+</p>
+<!-- My Project Overview -->
+<section class="container my-5">
+
+    <h2 class="text-center mb-4">My Project Overview</h2>
+
+    <!-- Team Cards -->
+    <div class="row g-4">
+
+        <!-- Team Member 1 -->
+        <div class="col-md-4">
+            <div class="card shadow h-100 text-center">
+                <div class="card-body">
+
+                    <h5 class="card-title">VEPPAREDDY GARI LAVA KUMAR REDDY</h5>
+                    <p class="text-muted">Team Leader</p>
+
+                    <p class="card-text">
+                           VEPPAREDDY GARI LAVA KUMAR REDDY is the Team Leader of this project.
+    He coordinated the project activities, managed team collaboration,
+    and guided the development of the Electricity Consumption Analysis
+    system to ensure successful project completion.
+
+                    </p>
+
+                    <button class="btn btn-primary">
+                        View Profile
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 2 -->
+        <div class="col-md-4">
+            <div class="card shadow h-100 text-center">
+                <div class="card-body">
+
+
+                    <h5 class="card-title">PAGADALA JAICHANDRA DARSHAN</h5>
+                    <p class="text-muted">Developer</p>
+
+                    <p class="card-text">
+                        PAGADALA JAICHANDRA DARSHAN worked as the Developer for this project.
+    He was responsible for designing and implementing the web application,
+    integrating data visualization features, and ensuring smooth system
+    functionality for users.
+                    </p>
+
+                    <button class="btn btn-success">
+                        View Profile
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Member 3 -->
+        <div class="col-md-4">
+            <div class="card shadow h-100 text-center">
+                <div class="card-body">
+
+                    <h5 class="card-title">BELLAMKONDA VENKATA MAHENDRA</h5>
+                    <p class="text-muted">Data Analyst</p>
+
+                    <p class="card-text">
+                         BELLAMKONDA VENKATA MAHENDRA served as the Data Analyst.
+    He collected, processed, and analyzed electricity consumption data,
+    helping to generate meaningful insights and visual reports for
+    better energy usage understanding.
+                    </p>
+
+                    <button class="btn btn-warning">
+                        View Profile
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+</div>
+
+{% endblock %}

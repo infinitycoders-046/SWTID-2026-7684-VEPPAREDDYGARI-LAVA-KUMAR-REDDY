@@ -1,0 +1,123 @@
+```html
+{% extends "base.html" %}
+
+{% block content %}
+
+<section class="container-fluid section">
+
+    <div class="container">
+
+        <h1 class="text-center mb-4">
+            Plugging into the Future: An Exploration of Electricity Consumption Patterns Dashboard 03
+        </h1>
+
+        <h3 class="mb-4">
+            Future Prediction
+        </h3>
+
+        <div class="tableau-container">
+
+            <div
+                class="tableauPlaceholder"
+                id="tableauViz">
+
+                <object class="tableauViz">
+
+                    <param
+                    name="host_url"
+                    value="https%3A%2F%2Fpublic.tableau.com%2F"/>
+
+                    <param
+                    name="embed_code_version"
+                    value="3"/>
+
+                    <param
+                    name="site_root"
+                    value=""/>
+
+                    <param
+                    name="name"
+                    value="pluggingintothefitureAnexplorationofelectricityconsumptionpatternsDasboard3/PluggingintotheFutureAnExplorationofElectricityConsumptionPatternsDashboard3"/>
+
+                    <param
+                    name="tabs"
+                    value="no"/>
+
+                    <param
+                    name="toolbar"
+                    value="yes"/>
+
+                    <param
+                    name="display_spinner"
+                    value="yes"/>
+
+                    <param
+                    name="display_overlay"
+                    value="yes"/>
+
+                    <param
+                    name="display_count"
+                    value="no"/>
+
+                </object>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<style>
+
+.tableau-container{
+    width:100%;
+    height:calc(100vh - 120px);
+    overflow:hidden;
+}
+
+.tableauPlaceholder,
+.tableauViz{
+    width:100% !important;
+    height:100% !important;
+}
+
+@media (max-width:768px){
+
+.tableau-container{
+    height:80vh;
+}
+
+}
+
+</style>
+
+
+<script>
+
+var divElement =
+document.getElementById("tableauViz");
+
+var vizElement =
+divElement.getElementsByTagName("object")[0];
+
+vizElement.style.width =
+"100%";
+
+vizElement.style.height =
+"100%";
+
+var script =
+document.createElement("script");
+
+script.src =
+"https://public.tableau.com/javascripts/api/viz_v1.js";
+
+divElement.appendChild(script);
+
+</script>
+
+{% endblock %}
+```

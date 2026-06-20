@@ -1,0 +1,2021 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1210.1815                               -->
+<workbook original-version='18.1' source-build='2025.3.1 (20253.25.1210.1815)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <WorkbookOptimizerRuleConfig />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='pluggingintothefutureAnexplorationwiseconsumptionpattersStory' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='consumption (data)' inline='true' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Localhost' name='mysql.0o8ngpm12d3ufj177729c1v8xtkz'>
+            <connection class='mysql' dbname='data' odbc-native-protocol='' one-time-sql='' port='3306' server='Localhost' source-charset='' username='root' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='mysql.0o8ngpm12d3ufj177729c1v8xtkz' name='consumption' table='[consumption]' type='table'>
+          <columns>
+            <column datatype='datetime' date-parse-format='MM/dd/yyyy' name='Dates' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>States</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[States]</local-name>
+            <parent-name>[consumption]</parent-name>
+            <remote-alias>States</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[consumption_3069B779E9B74E018B78E9DB038209FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Regions</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Regions]</local-name>
+            <parent-name>[consumption]</parent-name>
+            <remote-alias>Regions</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>262140</width>
+            <contains-null>true</contains-null>
+            <cast-to-local-type>true</cast-to-local-type>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_WLONGVARCHAR&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_WCHAR&quot;</attribute>
+            </attributes>
+            <object-id>[consumption_3069B779E9B74E018B78E9DB038209FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[consumption]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[consumption_3069B779E9B74E018B78E9DB038209FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[consumption]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[consumption_3069B779E9B74E018B78E9DB038209FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Dates</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Dates]</local-name>
+            <parent-name>[consumption]</parent-name>
+            <remote-alias>Dates</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation charset='280' flag='1' name='LEN_RUS_S2' />
+            <object-id>[consumption_3069B779E9B74E018B78E9DB038209FD]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Usage</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Usage]</local-name>
+            <parent-name>[consumption]</parent-name>
+            <remote-alias>Usage</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQL_DOUBLE&quot;</attribute>
+              <attribute datatype='string' name='DebugWireType'>&quot;SQL_C_DOUBLE&quot;</attribute>
+            </attributes>
+            <object-id>[consumption_3069B779E9B74E018B78E9DB038209FD]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Lockdowm period' datatype='string' name='[Calculation_0964283813650432]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF MONTH([Dates])&lt;=3 THEN&#13;&#10;&quot;After Lockdown&quot;&#13;&#10;ELSE&#13;&#10;&quot;BeforeLockdow&quot;&#13;&#10;END' />
+      </column>
+      <column caption='states' datatype='string' name='[Calculation_0991495950372868]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='IF [Dates] &lt; #2020-03-25# THEN&#13;&#10;    &quot;Before Lockdown&quot;&#13;&#10;ELSE&#13;&#10;    &quot;After Lockdown&quot;&#13;&#10;END' />
+      </column>
+      <column datatype='datetime' datatype-customized='true' name='[Dates]' role='dimension' type='ordinal' />
+      <column datatype='real' name='[Measure Names (date 2)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAKEDATE( 1970, MONTH( DATEPARSE( &apos;y-MMM-d&apos;,  &quot;1970-&quot; + [:Measure Names] + &quot;-01&quot; ) ), 1 )' />
+      </column>
+      <column datatype='real' name='[Measure Names (date)]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='MAKEDATE( 1970, MONTH( DATEPARSE( &apos;y-MMM-d&apos;,  &quot;1970-&quot; + [:Measure Names] + &quot;-01&quot; ) ), 1 )' />
+      </column>
+      <column datatype='string' name='[Regions]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='string' name='[States]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+      <column caption='consumption' datatype='table' name='[__tableau_internal_object_id__].[consumption_3069B779E9B74E018B78E9DB038209FD]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column-instance column='[Dates]' derivation='Day' name='[dy:Dates:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Dates]' derivation='Month' name='[mn:Dates:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Calculation_0964283813650432]' derivation='None' name='[none:Calculation_0964283813650432:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Dates]' derivation='None' name='[none:Dates:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Regions]' derivation='None' name='[none:Regions:nk]' pivot='key' type='nominal' />
+      <column-instance column='[States]' derivation='None' name='[none:States:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Dates]' derivation='Quarter' name='[qr:Dates:ok]' pivot='key' type='ordinal' />
+      <column-instance column='[Dates]' derivation='Year' name='[yr:Dates:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='en_US' class='hyper' dbname='C:/DARSHAN TABLEAU PROJECT/consumption (data).hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>States</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[States]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>States</remote-alias>
+              <ordinal>0</ordinal>
+              <family>consumption</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Regions</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Regions]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Regions</remote-alias>
+              <ordinal>1</ordinal>
+              <family>consumption</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='1' name='LEN_RUS_S2' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>2</ordinal>
+              <family>consumption</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>33</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>3</ordinal>
+              <family>consumption</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>32</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Dates</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[Dates]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Dates</remote-alias>
+              <ordinal>4</ordinal>
+              <family>consumption</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>356</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Usage</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Usage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Usage</remote-alias>
+              <ordinal>5</ordinal>
+              <family>consumption</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2709</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[yr:Dates:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2019</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[mn:Dates:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[qr:Dates:ok]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2019</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Regions:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;WR&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;NER&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;ER&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SR&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;NR&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:States:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Goa&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;Telangana&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;Andhra Pradesh&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;MP&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Chandigarh&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;Punjab&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;J&amp;K&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;West Bengal&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Gujarat&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Tripura&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Chhattisgarh&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;Rajasthan&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;Meghalaya&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Arunachal Pradesh&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Nagaland&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;Maharashtra&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Delhi&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;Sikkim&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;Jharkhand&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;Karnataka&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;Manipur&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;Mizoram&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Haryana&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;UP&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;DNH&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;Tamil Nadu&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Assam&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;Odisha&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;Kerala&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;HP&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;Uttarakhand&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Bihar&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;Pondy&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[dy:Dates:ok]' type='palette'>
+            <map to='#499894'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>1</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>2020</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>2019</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>2</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Calculation_0964283813650432:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;BeforeLockdow&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;After Lockdown&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <default-sorts>
+        <natural-sort column='[none:Dates:ok]' direction='DESC' />
+      </default-sorts>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='States' />
+        <field-sort-custom-order field='Regions' />
+        <field-sort-custom-order field='latitude' />
+        <field-sort-custom-order field='longitude' />
+        <field-sort-custom-order field='Dates' />
+        <field-sort-custom-order field='Calculation_0991495951798278' />
+        <field-sort-custom-order field='Dates (copy)_0991495951675397' />
+        <field-sort-custom-order field='Calculation_0991495950372868' />
+        <field-sort-custom-order field='Calculation_0991495950053379' />
+        <field-sort-custom-order field='Usage' />
+        <field-sort-custom-order field='Measure Names (date 2)' />
+        <field-sort-custom-order field='Measure Names (date)' />
+        <field-sort-custom-order field='Geometry (generated)' />
+        <field-sort-custom-order field='Latitude (generated)' />
+        <field-sort-custom-order field='Longitude (generated)' />
+        <field-sort-custom-order field=':Measure Names' />
+        <field-sort-custom-order field='Multiple Values' />
+      </field-sort-info>
+      <object-graph>
+        <objects>
+          <object caption='consumption' id='consumption_3069B779E9B74E018B78E9DB038209FD'>
+            <properties context=''>
+              <relation connection='mysql.0o8ngpm12d3ufj177729c1v8xtkz' name='consumption' table='[consumption]' type='table'>
+                <columns>
+                  <column datatype='datetime' date-parse-format='MM/dd/yyyy' name='Dates' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='2019 State Consumption'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumption (data)' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0kirkws1kw5z5w17yoxnk1dn0l3z'>
+            <column datatype='string' name='[States]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+            <column-instance column='[States]' derivation='None' name='[none:States:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Usage]' derivation='Sum' name='[sum:Usage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[Longitude (generated)]' field-type='quantitative' max='12287550.622159073' min='6315382.8696843283' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[Latitude (generated)]' field-type='quantitative' max='4655065.0621134434' min='1208733.9959835275' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]' />
+              <lod column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]' />
+              <text column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' />
+              <geometry column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-transparency' value='255' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[Latitude (generated)]</rows>
+        <cols>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{BBB87814-F8DE-404C-9663-6F072FFB9CEB}' />
+    </worksheet>
+    <worksheet name='2019 and 2020 month wise consuption'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumption (data)' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kirkws1kw5z5w17yoxnk1dn0l3z'>
+            <column datatype='datetime' datatype-customized='true' name='[Dates]' role='dimension' type='ordinal' />
+            <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+            <column-instance column='[Dates]' derivation='Month' name='[mn:Dates:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Dates]' derivation='Quarter' name='[qr:Dates:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Usage]' derivation='Sum' name='[sum:Usage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dates]' derivation='Year' name='[yr:Dates:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Dates:ok]' member='2019' />
+              <groupfilter function='member' level='[yr:Dates:ok]' member='2020' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]' />
+              <lod column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[qr:Dates:ok]' />
+              <lod column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[mn:Dates:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]</rows>
+        <cols>([federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok] / ([federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[qr:Dates:ok] / [federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[mn:Dates:ok]))</cols>
+      </table>
+      <simple-id uuid='{DBA437BA-7E6B-4E26-909C-15A6961847A8}' />
+    </worksheet>
+    <worksheet name='2020 State Consumption'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumption (data)' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0kirkws1kw5z5w17yoxnk1dn0l3z'>
+            <column datatype='datetime' datatype-customized='true' name='[Dates]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[States]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+            <column-instance column='[States]' derivation='None' name='[none:States:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Usage]' derivation='Sum' name='[sum:Usage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dates]' derivation='Year' name='[yr:Dates:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]'>
+            <groupfilter function='member' level='[yr:Dates:ok]' member='2020' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[Longitude (generated)]' field-type='quantitative' max='13473676.017904462' min='4726587.3761441428' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[Latitude (generated)]' field-type='quantitative' max='4789108.1900294088' min='172888.85488555185' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Multipolygon' />
+            <encodings>
+              <color column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]' />
+              <text column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' />
+              <geometry column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[Latitude (generated)]</rows>
+        <cols>([federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok] * [federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[Longitude (generated)])</cols>
+      </table>
+      <simple-id uuid='{F5021F63-56C8-4E58-A4E5-68AF6A2888AA}' />
+    </worksheet>
+    <worksheet name='Metro city  State usage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumption (data)' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0kirkws1kw5z5w17yoxnk1dn0l3z'>
+            <column datatype='string' name='[States]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[States]' derivation='None' name='[none:States:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Usage]' derivation='Sum' name='[sum:Usage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' />
+              <size column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' />
+              <lod column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]' />
+              <text column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' />
+              <text column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[avg:latitude:qk]</rows>
+        <cols>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{A43588F9-EBAE-4721-A541-482E19F41F01}' />
+    </worksheet>
+    <worksheet name='Top n and bottom N'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumption (data)' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kirkws1kw5z5w17yoxnk1dn0l3z'>
+            <column datatype='datetime' datatype-customized='true' name='[Dates]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[States]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+            <column-instance column='[States]' derivation='None' name='[none:States:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Usage]' derivation='Sum' name='[sum:Usage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dates]' derivation='Year' name='[yr:Dates:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Gujarat&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Maharashtra&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Rajasthan&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Tamil Nadu&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;UP&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Dates:ok]' member='2019' />
+              <groupfilter function='member' level='[yr:Dates:ok]' member='2020' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]</column>
+            <column>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok] * [federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk])</rows>
+        <cols>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]</cols>
+      </table>
+      <simple-id uuid='{907DBC3D-B4C9-4A20-B325-8D8FFF53A471}' />
+    </worksheet>
+    <worksheet name='Total Consumption'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumption (data)' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kirkws1kw5z5w17yoxnk1dn0l3z'>
+            <column datatype='datetime' datatype-customized='true' name='[Dates]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[States]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+            <column-instance column='[States]' derivation='None' name='[none:States:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Usage]' derivation='Sum' name='[sum:Usage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dates]' derivation='Year' name='[yr:Dates:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Andhra Pradesh&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Arunachal Pradesh&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Assam&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Bihar&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Chandigarh&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Chhattisgarh&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Delhi&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;DNH&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Goa&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Gujarat&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Haryana&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;HP&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;J&amp;K&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Jharkhand&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Karnataka&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Kerala&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Maharashtra&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Manipur&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Meghalaya&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Mizoram&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;MP&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Nagaland&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Odisha&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Pondy&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Punjab&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Rajasthan&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Sikkim&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Tamil Nadu&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Telangana&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Tripura&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;UP&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;Uttarakhand&quot;' />
+              <groupfilter function='member' level='[none:States:nk]' member='&quot;West Bengal&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]' direction='DESC' using='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' />
+          <filter class='categorical' column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Dates:ok]' member='2019' />
+              <groupfilter function='member' level='[yr:Dates:ok]' member='2020' />
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]</column>
+            <column>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>([federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok] * [federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk])</rows>
+        <cols>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]</cols>
+      </table>
+      <simple-id uuid='{BABC0F00-CCBA-4488-89BA-C67D6375315D}' />
+    </worksheet>
+    <worksheet name='Total consumption region wise'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumption (data)' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kirkws1kw5z5w17yoxnk1dn0l3z'>
+            <column datatype='string' name='[Regions]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+            <column-instance column='[Regions]' derivation='None' name='[none:Regions:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Usage]' derivation='Sum' name='[sum:Usage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Regions:nk]' />
+              <size column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' />
+              <wedge-size column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' />
+              <text column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Regions:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{FE6EF935-1E5D-4130-A6F1-C32483A1EB95}' />
+    </worksheet>
+    <worksheet name='Usage by region'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumption (data)' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kirkws1kw5z5w17yoxnk1dn0l3z'>
+            <column datatype='datetime' datatype-customized='true' name='[Dates]' role='dimension' type='ordinal' />
+            <column datatype='string' name='[Regions]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+            <column-instance column='[Regions]' derivation='None' name='[none:Regions:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Usage]' derivation='Sum' name='[sum:Usage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dates]' derivation='Year' name='[yr:Dates:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Dates:ok]' member='2019' />
+              <groupfilter function='member' level='[yr:Dates:ok]' member='2020' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]</rows>
+        <cols>([federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Regions:nk] / [federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok])</cols>
+      </table>
+      <simple-id uuid='{6D111434-F021-4FEE-8E59-89699C3C6630}' />
+    </worksheet>
+    <worksheet name='quarter usage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumption (data)' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kirkws1kw5z5w17yoxnk1dn0l3z'>
+            <column datatype='datetime' datatype-customized='true' name='[Dates]' role='dimension' type='ordinal' />
+            <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+            <column-instance column='[Dates]' derivation='Quarter' name='[qr:Dates:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Usage]' derivation='Sum' name='[sum:Usage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dates]' derivation='Year' name='[yr:Dates:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Dates:ok]' member='2019' />
+              <groupfilter function='member' level='[yr:Dates:ok]' member='2020' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]</rows>
+        <cols>([federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok] / [federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[qr:Dates:ok])</cols>
+      </table>
+      <simple-id uuid='{51852C17-AF10-4590-A857-4A7EB1E0DE84}' />
+    </worksheet>
+    <worksheet name='region wise state usage'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumption (data)' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kirkws1kw5z5w17yoxnk1dn0l3z'>
+            <column datatype='string' name='[Regions]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='string' name='[States]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+            <column-instance column='[Regions]' derivation='None' name='[none:Regions:nk]' pivot='key' type='nominal' />
+            <column-instance column='[States]' derivation='None' name='[none:States:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Usage]' derivation='Sum' name='[sum:Usage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Regions:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Regions:nk] / [federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk])</rows>
+        <cols>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]</cols>
+      </table>
+      <simple-id uuid='{FBBBDBE8-083D-4B5A-B13A-10539C7A1610}' />
+    </worksheet>
+    <worksheet name='usage before and after lockdown'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumption (data)' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kirkws1kw5z5w17yoxnk1dn0l3z'>
+            <column caption='Lockdowm period' datatype='string' name='[Calculation_0964283813650432]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='IF MONTH([Dates])&lt;=3 THEN&#13;&#10;&quot;After Lockdown&quot;&#13;&#10;ELSE&#13;&#10;&quot;BeforeLockdow&quot;&#13;&#10;END' />
+            </column>
+            <column datatype='datetime' datatype-customized='true' name='[Dates]' role='dimension' type='ordinal' />
+            <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_0964283813650432]' derivation='None' name='[none:Calculation_0964283813650432:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Usage]' derivation='Sum' name='[sum:Usage:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <natural-sort column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Calculation_0964283813650432:nk]' direction='DESC' />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Calculation_0964283813650432:nk]' />
+              <text column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]</rows>
+        <cols>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Calculation_0964283813650432:nk]</cols>
+      </table>
+      <simple-id uuid='{264934EF-2664-4B27-8B00-E2FB4DC39A26}' />
+    </worksheet>
+    <worksheet name='usage by year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='consumption (data)' name='federated.0kirkws1kw5z5w17yoxnk1dn0l3z' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0kirkws1kw5z5w17yoxnk1dn0l3z'>
+            <column datatype='datetime' datatype-customized='true' name='[Dates]' role='dimension' type='ordinal' />
+            <column datatype='real' datatype-customized='true' name='[Usage]' role='measure' type='quantitative' />
+            <column-instance column='[Dates]' derivation='Month' name='[mn:Dates:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Usage]' derivation='Sum' name='[sum:Usage:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Dates]' derivation='Year' name='[yr:Dates:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[yr:Dates:ok]' member='2019' />
+              <groupfilter function='member' level='[yr:Dates:ok]' member='2020' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]</rows>
+        <cols>([federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok] / [federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[mn:Dates:ok])</cols>
+      </table>
+      <simple-id uuid='{33A2D942-1180-40F2-9F6E-52963DD0FFF4}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Plugging into the future : An xploration wise consumption patters Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='38' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='10' param='vert' type-v2='layout-flow' w='82400' x='800' y='1000'>
+              <zone h='9500' id='11' type-v2='title' w='82400' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='88500' id='7' param='horz' type-v2='layout-flow' w='82400' x='800' y='10500'>
+                <zone h='88500' id='5' type-v2='layout-basic' w='82400' x='800' y='10500' />
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98000' id='37' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='1000'>
+              <zone h='8250' id='39' name='Usage by region' pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]' type-v2='color' w='16000' x='83200' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='24625' id='3' name='2019 State Consumption' w='33300' x='3800' y='8875' />
+        <zone h='24625' id='12' name='2020 State Consumption' w='33300' x='38600' y='7375' />
+        <zone h='24625' id='13' name='Total Consumption' w='33300' x='4200' y='40750' />
+        <zone h='24625' id='36' name='Usage by region' w='33300' x='42500' y='40250' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='45' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='44' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='9500' id='11' type-v2='title' w='82400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='12' is-fixed='true' name='2020 State Consumption' w='33300' x='38600' y='7375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='3' is-fixed='true' name='2019 State Consumption' w='33300' x='3800' y='8875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='36' is-fixed='true' name='Usage by region' w='33300' x='42500' y='40250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8250' id='39' name='Usage by region' pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]' type-v2='color' w='16000' x='83200' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='13' is-fixed='true' name='Total Consumption' w='33300' x='4200' y='40750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E29D6E0D-5ACD-4EEF-8843-E8879D56D46C}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Plugging into the future : An xploration wise consumption patters Dashboard Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='39' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='10' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+              <zone h='98000' id='5' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='9500' id='7' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='88500' id='6' type-v2='layout-basic' w='98400' x='800' y='10500' />
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='24625' id='37' name='Top n and bottom N' w='33300' x='2600' y='13875' />
+        <zone h='24625' id='41' name='2019 and 2020 month wise consuption' w='33300' x='39900' y='14875' />
+        <zone h='24625' id='43' name='Total consumption region wise' w='33300' x='3700' y='42625' />
+        <zone h='24625' id='46' name='usage before and after lockdown' w='33300' x='38700' y='41625' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='900' minheight='900' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='52' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='51' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='9500' id='7' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='37' is-fixed='true' name='Top n and bottom N' w='33300' x='2600' y='13875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='41' is-fixed='true' name='2019 and 2020 month wise consuption' w='33300' x='39900' y='14875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='46' is-fixed='true' name='usage before and after lockdown' w='33300' x='38700' y='41625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='43' is-fixed='true' name='Total consumption region wise' w='33300' x='3700' y='42625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{5EED03F7-C0B7-4C77-9BD8-84597A937CF5}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Plugging into the future : An xploration wise consumption patters Dashboard Dashboard 3'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='10' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='9500' id='11' type-v2='title' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='88500' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='10500'>
+              <zone h='88500' id='5' type-v2='layout-basic' w='82400' x='800' y='10500' />
+              <zone fixed-size='160' h='88500' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='16000' x='83200' y='10500'>
+                <zone h='24437' id='17' type-v2='empty' w='16000' x='83200' y='10500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='24437' id='18' type-v2='empty' w='16000' x='83200' y='34937'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='21' name='Metro city  State usage' pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' type-v2='color' w='16000' x='83200' y='59374'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='15750' id='22' name='Metro city  State usage' pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' type-v2='size' w='16000' x='83200' y='67499'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+                <zone h='15750' id='43' name='region wise state usage' pane-specification-id='1' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Regions:nk]' type-v2='color' w='16000' x='83200' y='83249'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='24625' id='19' name='usage by year' w='33300' x='37800' y='42625' />
+        <zone h='24625' id='20' name='Metro city  State usage' w='33300' x='1400' y='41375' />
+        <zone h='24625' id='41' name='quarter usage' w='33300' x='3900' y='14250' />
+        <zone h='24625' id='42' name='region wise state usage' w='33300' x='42000' y='13125' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='49' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='48' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone h='9500' id='11' type-v2='title' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='42' is-fixed='true' name='region wise state usage' w='33300' x='42000' y='13125'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15750' id='43' name='region wise state usage' pane-specification-id='1' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Regions:nk]' type-v2='color' w='16000' x='83200' y='83249'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='41' is-fixed='true' name='quarter usage' w='33300' x='3900' y='14250'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='20' is-fixed='true' name='Metro city  State usage' w='33300' x='1400' y='41375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8125' id='21' name='Metro city  State usage' pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' type-v2='color' w='16000' x='83200' y='59374'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='15750' id='22' name='Metro city  State usage' pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' type-v2='size' w='16000' x='83200' y='67499'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='197' h='24625' id='19' is-fixed='true' name='usage by year' w='33300' x='37800' y='42625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{E2EE4F6B-E8AA-4BF6-9EC2-CCD6FCD9CE0B}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Plugging into the Future: An Exploration of Electricity Consumption Patterns
+</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='3423' id='3' type-v2='title' w='98426' x='787' y='830' />
+            <zone h='10477' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='4253' />
+            <zone h='84440' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='14730'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='2019 state consumption' captured-sheet='2019 State Consumption' id='1'>
+                    <capturedDeltas>
+                      <worksheet name='2019 State Consumption'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <encoding attr='space' class='0' field='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[Latitude (generated)]' field-type='quantitative' max='4770456.583364943' min='-2620252.5903203296' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+                            <encoding attr='space' class='0' field='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[Longitude (generated)]' field-type='quantitative' max='12843961.309714669' min='5212150.1447659303' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='2020 state consumption' captured-sheet='2020 State Consumption' id='2' />
+                  <story-point caption='total comsumption' captured-sheet='Total Consumption' id='3' />
+                  <story-point caption='Top N and bottom N' captured-sheet='Top n and bottom N' id='13' />
+                  <story-point caption='2019 and 2020 monthwise conumption' captured-sheet='2019 and 2020 month wise consuption' id='14' />
+                  <story-point caption='total consumption region wise' captured-sheet='Total consumption region wise' id='15' />
+                  <story-point caption='usage before and after lockdown' captured-sheet='usage before and after lockdown' id='16' />
+                  <story-point caption='region wise state usage' captured-sheet='region wise state usage' id='17' />
+                  <story-point caption='quarter usage' captured-sheet='quarter usage' id='18' />
+                  <story-point caption='usage by year' captured-sheet='usage by year' id='12' />
+                  <story-point caption='metro city usage' captured-sheet='Metro city  State usage' id='11' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{8A46EE78-8087-4A40-A487-7CFF302844B1}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='2019 State Consumption'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9ED4B98E-7178-4F9D-B881-F6B7F1E75B64}' />
+    </window>
+    <window class='worksheet' name='2020 State Consumption'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:States:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3C92D490-AB6F-4911-A3F5-B677A274A079}' />
+    </window>
+    <window class='worksheet' name='Total Consumption'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0B5D1297-A635-4F86-9C4E-98CCA9C64CC4}' />
+    </window>
+    <window class='worksheet' name='Usage by region'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{010AB284-6094-4079-8215-C9E984E58F45}' />
+    </window>
+    <window class='worksheet' name='Top n and bottom N'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DB68A77D-7386-452B-94D1-97979A5CE929}' />
+    </window>
+    <window class='worksheet' name='2019 and 2020 month wise consuption'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{467A6956-253A-454C-9B37-A51873B4BDAA}' />
+    </window>
+    <window class='worksheet' name='Total consumption region wise'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Regions:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{DD7E777B-886B-4ACA-A61D-A0E0957C39CB}' />
+    </window>
+    <window class='worksheet' name='usage before and after lockdown'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Calculation_0964283813650432:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{14BA8B17-7C30-4EBF-B41E-A0794F8BE829}' />
+    </window>
+    <window class='worksheet' name='region wise state usage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[none:Regions:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AC822F8B-83D6-4A47-87EF-8D3F10DFF3EE}' />
+    </window>
+    <window class='worksheet' name='quarter usage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BC49E45D-9EF7-471C-A5FD-D05BCB1F25AA}' />
+    </window>
+    <window class='worksheet' name='Metro city  State usage'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[sum:Usage:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{131F33D5-02DF-40B6-926B-3CCAA06C6E3C}' />
+    </window>
+    <window class='worksheet' name='usage by year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0kirkws1kw5z5w17yoxnk1dn0l3z].[yr:Dates:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2505C7C5-AC3A-44CA-A4DF-E6E9D648BD45}' />
+    </window>
+    <window class='dashboard' name='Plugging into the future : An xploration wise consumption patters Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='2019 State Consumption'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='2020 State Consumption'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total Consumption'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Usage by region'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='37' />
+      <simple-id uuid='{5C35F64E-C4BB-4728-9249-BFE1C7AFF5BB}' />
+    </window>
+    <window class='dashboard' name='Plugging into the future : An xploration wise consumption patters Dashboard Dashboard 2'>
+      <viewpoints>
+        <viewpoint name='2019 and 2020 month wise consuption'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Top n and bottom N'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total consumption region wise'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='usage before and after lockdown'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='6' />
+      <simple-id uuid='{762E212F-CE39-4EB0-8756-1945445DCE66}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Plugging into the future : An xploration wise consumption patters Dashboard Dashboard 3'>
+      <viewpoints>
+        <viewpoint name='Metro city  State usage'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='quarter usage'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='region wise state usage' />
+        <viewpoint name='usage by year'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='11' />
+      <simple-id uuid='{C8CFC6C9-DC35-4E35-9600-75FB22197985}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='3' />
+      <simple-id uuid='{CFB74993-4300-4650-9073-A8C99FDBEB48}' />
+    </window>
+  </windows>
+  <workbook-optimizer>
+    <rule-config>
+      <rule ignored='true' ruleID='5' />
+      <rule ignored='true' ruleID='6' />
+      <rule ignored='true' ruleID='16' />
+    </rule-config>
+  </workbook-optimizer>
+</workbook>
